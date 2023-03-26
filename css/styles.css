@@ -53,7 +53,7 @@ h2 {
     font-weight: 700;
     text-align: center;
     font-size: 3.125rem;
-    padding: 60px 0 40px 0;
+    padding: 40px 0 40px 0;
     margin-bottom: 0;
 }
 
@@ -62,7 +62,7 @@ h3 {
     color: #efeff1;
     /* padding-bottom: 26px; */
     /* padding-top: 47px; */
-    font-size: 1.1875rem;
+    font-size: 1.5rem;
 }
 
 hr {
@@ -222,17 +222,17 @@ hr:not([size]) {
 }
 
 .bloc-apropos h3 {
-    margin-bottom: 11px;
+    margin-bottom: 5%;
     color: whitesmoke;
 }
 
 .apropos .bloc-apropos p {
     color: #efeff1;
     font-weight: 400;
-    font-size: 0.95rem;
-    line-height: 1.5rem;
+    font-size: 1.15rem;
+    line-height: 200%;
     padding: 0;
-    margin-top: 11px;
+    margin-top: 5%;
 }
 
 .bloc-defosteo i {
@@ -254,14 +254,15 @@ hr:not([size]) {
 .contact a {
     color: whitesmoke;
     text-decoration: none;
+    transition: .5s ease-in-out;
 }
 
 .contact p a:hover,
 .contact p a:focus {
     color: #DBA189;
-    font-size: larger;
+    font-size: small;
     text-decoration: none;
-    transition: .7s;
+    transition: .7s ease-in-out;
 }
 
 /* .contact hr {
@@ -274,7 +275,7 @@ hr:not([size]) {
 
 #features h3 {
     /* color: #DBA189; */
-    font-size: 1.0625rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 0;
@@ -282,7 +283,7 @@ hr:not([size]) {
 
 #features p {
     color: whitesmoke;
-    font-size: 0.8125rem;
+    /* font-size: 1.15rem; */
     padding: 0;
     font-weight: 500;
     line-height: 1.3125rem;
@@ -290,29 +291,30 @@ hr:not([size]) {
 }
 
 #features i {
-    font-size: 2.5rem;
+    font-size: 275%;
     color: #081e30;
 }
 
 .bg-icon-features {
     background: #DBA189;
     border-radius: 50px;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* transition: .5s ease-in-out; */
 }
 
+/* #features i:hover {
+    font-size: 3rem;
+    color: #081e30;
+} */
+
 .bg-icon-features:hover {
-    background: #DBA189;
-    /* border-radius: 50px; */
-    width: 70px;
-    height: 70px;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    transition: .5s;
+    /* width: 105px; */
+    /* height: 105px; */
+    /* transition: .6s ease-in-out; */
 }
 
 /* Pour rappel, le signe > permet de ne cibler que les div enfants de premier niveau. */
@@ -458,13 +460,17 @@ hr:not([size]) {
     padding: 0;
 }
 
+/* #footer .medias ul i {
+    font-size: 2rem;
+} */
+
 /* Dans l'ID team, si il y a un ul et si il y a une li, on leur applique display:inline, color:#b2b3b7 */
 #footer .medias ul li {
     display: inline;
     /* list-style-type: none; */
     color: #efeff1;
-    font-size: 1.25rem;
-    margin: 0 20px;
+    font-size: 1.75rem;
+    margin: 0 5%;
 }
 
 #footer .copyright h4 {
@@ -516,6 +522,18 @@ hr:not([size]) {
         font-size: 2.25rem;
     }
 
+    h3{
+        font-size: 1.15rem;
+    }
+
+    #features h3 {
+        font-size: 1.15rem;
+    }
+
+    #features p{
+        font-size: .9rem;
+    }
+
     .navbar-brand img{
         display: none;
     }
@@ -534,11 +552,6 @@ hr:not([size]) {
         display: none;
     }
 
-    .apropos .container h2{
-        padding: 30% 0 40px 0;
-        font-size: 2.5rem;
-    }
-
     .navbar-light .navbar-toggler {
         border: 2px solid rgba(0,0,0,.6);
     }
@@ -552,10 +565,32 @@ hr:not([size]) {
     .navbar-toggler:focus {
         box-shadow: none;
     }
+    
+    .apropos .container h2{
+        padding: 30% 0 40px 0;
+        font-size: 2.5rem;
+    }
 
     .bloc-apropos img{
         width: 50%;
         margin: 8% auto 4% auto;
+    }
+
+    .apropos .bloc-apropos p{
+        font-size: 1rem;
+    }
+
+    #features i {
+        font-size: 200%;
+    }
+    
+    .bg-icon-features {
+        width: 75px;
+        height: 75px;
+    }
+
+    #footer .medias ul li {
+        font-size: 1.2rem;
     }
 
     #footer .copyright h4 {
@@ -580,8 +615,20 @@ hr:not([size]) {
         font-size: 2.75rem;
     }
 
+    h3{
+        font-size: 1.25rem;
+    }
+
+    #features h3 {
+        font-size: 1.25rem;
+    }
+
+    #features p{
+        font-size: 1rem;
+    }
+
     .yellow-line{
-        font-size: 1.1rem;
+        font-size: 1.15rem;
     }
 
     .btn{
@@ -611,6 +658,23 @@ hr:not([size]) {
 
     .bloc-apropos .col-md-5 h3 {
         margin-bottom: 20%;
+    }
+
+    .apropos .bloc-apropos p{
+        font-size: 1.1rem;
+    }
+
+    #features i {
+        font-size: 250%;
+    }
+    
+    .bg-icon-features {
+        width: 90px;
+        height: 90px;
+    }
+
+    #footer .medias ul li {
+        font-size: 1.5rem;
     }
 
     #scroll_to_top img {
@@ -648,8 +712,20 @@ hr:not([size]) {
         font-size: 3.125rem;
     }
 
+    h3{
+        font-size: 1.5rem;
+    }
+
+    #features h3 {
+        font-size: 1.5rem;
+    }
+
+    #features p{
+        font-size: 1.1rem;
+    }
+
     .yellow-line{
-        font-size: 1.15rem;
+        font-size: 1.25rem;
     }
 
     .btn{
@@ -659,6 +735,23 @@ hr:not([size]) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 0;
         padding-left: 0;
+    }
+
+    .apropos .bloc-apropos p{
+        font-size: 1.2rem;
+    }
+
+    #features i {
+        font-size: 275%;
+    }
+    
+    .bg-icon-features {
+        width: 100px;
+        height: 100px;
+    }
+
+    #footer .medias ul li {
+        font-size: 1.75rem;
     }
 
     #scroll_to_top img {
