@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JB-Osteo</title>
+  <!-- TYPOS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <!-- BOOTSTRAP CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/scripts.js"></script>
+</head>
+
+<body>
+  <div class="section-globale">
+    <div id="scroll_to_top">
+      <a href="#top"><img src="./images/top-arrow.jpg" alt="Retourner en haut"/></a>
+    </div>
+    <!-- HEADER ET NAV PRINCIPALE -->
+    <header class="container-fluid bg-light">
+      <!-- <div class="container"> -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <!-- <img src="./images/osteo-jonathan-borreil-photo2.jpg" type="button" alt="JB"> -->
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> -->
+        <a class="navbar-brand" href="http://127.0.0.1:5500/index.html" title="Jonathan Borreil - Osteopathe">
+          <img src="./images/osteo-jonathan-borreil-photo2.jpg" height="85" alt="Logo Jonathan Borreil">
+          <h2 class="on-off">JB Ostéo</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- La classe bootstrap ml (margin-left) crée une marge à gauche du menu avec la valeur auto, le menu se colle complètement à droite. -->
+          <ul class="navbar-nav">
+            <!-- <li class="nav-item mx-4">
+              <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+            </li> -->
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="#apropos">À  Propos</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="#pourqui">Pour qui</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="#comment">Comment</a>
+            </li>
+            <!-- <li class="nav-item"> <a class="nav-link" href="features.html">Blog & Astuces</a> </li> -->
+            <!-- <li class="nav-item"> <a class="nav-link" href="portfolio.html">Avis</a> </li> -->
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="https://www.doctolib.fr/osteopathe/toulouse/jonathan-borreil"
+                target="new">Prendre rendez-vous</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- </div> -->
+    </header>
+    <!-- FIN HEADER ET NAV PRINCIPALE -->
+
+    <!-- CAROUSEL -->
+    <div class="row carousel-entier">
+      <div id="carouselJonathanBorreil" class="carousel slide carousel-fade" data-interval="6000" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselJonathanBorreil" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselJonathanBorreil" data-slide-to="1"></li>
+          <li data-target="#carouselJonathanBorreil" data-slide-to="2"></li>
+        </ol>
+        <!-- La classe carousel-inner représente "l'écran", la zone de visionnage des "slides" -->
+        <div class="carousel-inner">
+          <div class="carousel-caption d-md-block">
+            <h1 class="carousel-h1">Ostéopathe D.O</h1>
+            <h2 class="carousel-h2">Jonathan Borreil</h2>
+            <h2 class="carousel-h2">Cabinet & Domicile</h2>
+            <h3 class="carousel-h3">Accès PMR</h3>
+          </div>
+          <!-- La classe carousel-item représente une slide, la slide active est celle en cours d'affichage. -->
+          <div class="carousel-item active">
+            <img src="./images/cabinet-jonathan-borreil-photo2.jpg" class="d-block w-100"
+              alt="cabinet d'ostéopathie Jonathan Borreil Tournefeuille">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/cabinet-jonathan-borreil-photo.jpg" class="d-block w-100"
+              alt="cabinet d'ostéopathie Jonathan Borreil Tournefeuille">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/cabinet-jonathan-borreil-photo1.jpg" class="d-block w-100"
+              alt="cabinet d'ostéopathie Jonathan Borreil Tournefeuille">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselJonathanBorreil" role="button" data-slide="prev">
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselJonathanBorreil" role="button" data-slide="next">
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!-- FIN CAROUSEL -->
+
+    <!-- BANDEAU JAUNE -->
+    <div class="container-fluid bg-yellow bandeau-off">
+      <div class="container yellow-line">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 m-auto">
+            <span class="align-middle">Respect des normes sanitaires en vigueur contre le Covid</span>
+          </div>
+          <!-- <button type="button" class="btn btn-outline-light">Download</button> -->
+          <div class="col-lg-6 col-sm-12 btn-position">
+            <a class="btn btn-outline-light" href="https://www.doctolib.fr/osteopathe/toulouse/jonathan-borreil"
+              role="button" target="new">Prendre rendez-vous</a>
+          </div>
+        </div>
+        <div id="apropos"></div>
+      </div>
+    </div>
+    <!-- FIN BANDEAU JAUNE -->
+
+    <!-- BLOC A PROPOS -->
+    <div class="container-fluid apropos">
+      <!-- BLOC TITRE -->
+      <div class="container">
+        <h2>À propos</h2>
+        <hr>
+      </div>
+      <!-- FIN BLOC TITRE -->
+      <!-- BLOC PHRASE INTRO -->
+      <div class="container text-center">
+        <p>Traitements dès l'âge de 7 mois : nourrissons, enfants, femmes enceintes, sportifs, seniors.
+        </p>
+        <p class="font-weight-bold"><strong>Cabinet en rez-de-chaussée et aux normes PMR.</strong></p>
+      </div>
+      <!-- FIN BLOC PHRASE INTRO -->
+      <!-- BLOC JOSTEO -->
+      <div class="container py-70">
+        <!-- La row ci-dessous a une hauteur déterminée par son enfant le plus grand (le plus haut) parce qu'elle est display flex et que le comportement natif d'un objet flex (même en-dehors de Bootstrap) est de stretcher ses enfants à sa hauteur. Les 4 colonnes ont donc la même hauteur, mais pas les fonds gris qui sont des enfants dans la colonne et qui n'héritent pas du comportement de leur parent. -->
+        <!-- BLOC PREZ JO -->
+        <!-- Afin d'avoir la même hauteur de fond gris dans chaque colonne, il faut que les colonnes soient en même temps des objets flex (ce qu'elles ne sont pas avec la seule classe col-*). On ajoute donc une classe row à chaque colonne de sorte que les enfants des colonnes vont faire la hauteur de leur parent. Un bémol, la classe row ajoute un margin négatif de -15px qui annule les goutières (padding de 15px à gauche et à droite de la classe col-*). Afin de corriger cela, on applique également une classe native de Bootstrap mx (margin gauche et droite) à la valeur 0, du coup on obtient une row sans margin négatif. -->
+        <div class="row mb-5">
+          <!-- <div class="col-12 col-lg-2 col-md-2"></div> -->
+          <div class="col-image col-12 row mb-3 mb-lg-0 mx-0">
+            <div class="border bg-grey bloc-apropos text-center w-100">
+              <div class="row">
+                <div class="col-12 col-lg-1 col-md-1"></div>
+                <div class="col-12 col-lg-4 col-md-5">
+                  <div class="row text-center">
+                    <h3>A Tournefeuille depuis 2016</h3>
+                  </div>
+                  <img src="./images/osteo-jonathan-borreil-photo1.jpg" alt="">
+                </div>
+                <div class="col-12 col-lg-2 col-md-1"></div>
+                <div class="col-12 col-lg-4 col-md-4 mt-4">
+                  <i class="fa fa-cube" aria-hidden="true"></i>
+                  <p>Diplôme d'Ostéopathe DO du Collège Ostéopathique Sutherland (COS) en poche, Jonathan Borreil ne
+                    perd pas de temps avant d'élaborer une approche ostéopathique originale, certains diront unique ou
+                    encore hors du commun, cet homme saura faire avec ses mains ce que vous n'imagineriez même pas faire
+                    avec vos pieds...</p>
+                </div>
+                <div class="col-12 col-lg-1 col-md-1"></div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-12 col-lg-2 col-md-2"></div> -->
+        </div>
+        <!-- FIN BLOC PREZ JO -->
+        <!-- BLOC DEF OSTEO -->
+        <div class="row">
+          <div class="col-12 col-lg-2 col-md-2 row mb-3 mb-lg-0 mx-0"></div>
+          <div class="bloc-defosteo col-12 col-lg-8 col-md-8 row mb-3 mb-lg-0 mx-0">
+            <div class="border bg-grey bloc-apropos text-center w-100">
+              <h3>L'ostéopathie</h3>
+              <i class="fa fa-medkit" aria-hidden="true"></i>
+              <p>L’ostéopathie est une approche thérapeutique manuelle douce qui se fonde sur une vision globale de la
+                structure du corps humain. L’ostéopathe va pratiquer des manipulations manuelles du système
+                musculo-squelettique et utiliser des techniques de relâchement myofascial afin de soulager les tensions,
+                les déséquilibres et les douleurs. Par exemple l’ostéopathe peut soigner les maux de dos, les entorses,
+                le stress, les règles douloureuses ou encore les migraines. L’ostéopathie est à visée préventive et
+                curative. Un ostéopathe peut recevoir différents types de patients : des nourrissons, des enfants, des
+                sportifs, des femmes enceintes ou encore des seniors.</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-2 col-md-2 row mb-3 mb-lg-0 mx-0"></div>
+        </div>
+        <!-- FIN BLOC DEF OSTEO -->
+      </div>
+      <!-- FIN BLOC JOSTEO -->
+    </div>
+    <!-- FIN BLOC A PROPOS -->
+
+    <!-- BANDEAU JAUNE -->
+    <div class="container-fluid bg-yellow">
+      <div class="container yellow-line">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 m-auto">
+            <span class="align-middle">Respect des normes sanitaires en vigueur contre le Covid</span>
+          </div>
+          <!-- <button type="button" class="btn btn-outline-light">Download</button> -->
+          <div class="col-lg-6 col-sm-12 btn-position">
+            <a class="btn btn-outline-light" href="https://www.doctolib.fr/osteopathe/toulouse/jonathan-borreil"
+              role="button" target="new">Prendre rendez-vous</a>
+          </div>
+        </div>
+        <div id="contact"></div>
+      </div>
+    </div>
+    <!-- FIN BANDEAU JAUNE -->
+
+    <!-- BLOC CONTACT -->
+    <div class="container-fluid contact">
+      <!-- On est obligés de mettre le container du titre dans une ligne (row) afin que la marge haute du titre h2 se fasse bien dans son parent et non pas par rapport aux cases de la ligne du dessus. -->
+      <div class="row">
+        <section class="container">
+          <h2>Contact</h2>
+          <hr>
+        </section>
+        <div class="container" id="features">
+          <div class="row">
+            <div class="col-12 col-lg-3 col-md-6">
+              <div class="row">
+                <!-- <div class="col-3"></div> -->
+                <!-- <div class="col-2"></div> -->
+                <div class="text-center py-0">
+                  <div class="d-flex justify-content-center my-4">
+                    <div class="bg-icon-features">
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <h3>Téléphone</h3>
+                  <p>06.69.49.27.70</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6">
+              <div class="row">
+                <!-- <div class="col-3"></div> -->
+                <div class="text-center py-0">
+                  <div class="d-flex justify-content-center my-4">
+                    <div class="bg-icon-features">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <h3>Mail</h3>
+                  <p>
+                    <a href="mailto:jonathan.borreil.osteo@gmail.com">jonathan.borreil.osteo@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6">
+              <div class="row">
+                <!-- <div class="col-3"></div> -->
+                <div class="text-center py-0">
+                  <div class="d-flex justify-content-center my-4">
+                    <div class="bg-icon-features">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <h3>Adresse</h3>
+                  <p>
+                    <a href="https://goo.gl/maps/DrPAPudsPnsP35w19" target="new">29 Chemin Saint-Pierre</a>
+                  </p>
+                  <p>
+                    <a href="https://goo.gl/maps/DrPAPudsPnsP35w19" target="_blank">31170 Tournefeuille</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6">
+              <div class="row">
+                <!-- <div class="col-3"></div> -->
+                <div class="text-center py-0">
+                  <div class="d-flex justify-content-center my-4">
+                    <div class="bg-icon-features">
+                      <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <h3>Horaires</h3>
+                  <p>Du Lundi au Samedi</p>
+                  <p>De 10h à 20h</p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-12 col-lg-4"> <div class="row"> <div class="col-3"> <div class="bg-icon-features"> <i class="fa fa-file" aria-hidden="true"></i> </div> </div> <div class="col-9"> <h3>Custom Widgets</h3> <p>We include our own widgets for Reviews, Social, Advertising and additional custom widgets to enhance your site. </p> </div> </div> </div> <div class="col-12 col-lg-4"> <div class="row"> <div class="col-3"> <div class="bg-icon-features"> <i class="fa fa-wordpress" aria-hidden="true"></i> </div> </div> <div class="col-9"> <h3>Compatible with Latest WordPress</h3> <p>We continuously test our themes so you will know they are always compatible with the latest version of WordPress. </p> </div> </div> </div> <div class="col-12 col-lg-4"> <div class="row"> <div class="col-3"> <div class="bg-icon-features"> <i class="fa fa-newspaper-o" aria-hidden="true"></i> </div> </div> <div class="col-9"> <h3>Custom Page Templates</h3> <p>Our themes come packaged with multiple pages templates including Authors Team, Full Width, and more to enhance your site. </p> </div> </div> </div> <div class="col-12 col-lg-4"> <div class="row"> <div class="col-3"> <div class="bg-icon-features"> <i class="fa fa-usd" aria-hidden="true"></i> </div> </div> <div class="col-9"> <h3>AD Management</h3> <p>You can place various size of banner images in your sidebar and banners to other ad positions with ease. </p> </div> </div> </div> <div class="col-12 col-lg-4"> <div class="row"> <div class="col-3"> <div class="bg-icon-features"> <i class="fa fa-file-code-o" aria-hidden="true"></i> </div> </div> <div class="col-9"> <h3>Bootstrap Framework</h3> <p>The theme is based on Bootstrap framework. We use default row/col- Bootstrap grid system. </p> </div> </div> </div> -->
+          </div>
+        </div>
+        <div class="container">
+          <div class="row mb-5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.0871180000267!2d1.3343071999999998!3d43.5839017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeb0fb067b2ff7%3A0xc716ad5fd432250!2s29%20Chemin%20St%20Pierre%2C%2031170%20Tournefeuille!5e0!3m2!1sen!2sfr!4v1662136048825!5m2!1sen!2sfr"
+              class="mb-5" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="btn-contact container">
+              <a class="btn btn-outline-light my-5" href="https://www.doctolib.fr/osteopathe/toulouse/jonathan-borreil"
+                role="button" target="new">Prendre rendez-vous</a>
+            </div>
+            <div id="pourqui"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIN BLOC CONTACT -->
+
+    <!-- BLOC POUR QUI ? -->
+    <div class="container-fluid pourqui">
+      <div class="row">
+        <!-- BLOC TITRE -->
+        <section class="container">
+          <h2>Pour qui ?</h2>
+          <hr>
+        </section>
+        <!-- FIN BLOC TITRE -->
+        <!-- BLOC PHRASE INTRO -->
+        <div class="container text-center">
+          <p>Traitements dès l'âge de 7 mois : nourrissons, enfants, femmes enceintes, sportifs, seniors.</p>
+        </div>
+        <!-- FIN BLOC PHRASE INTRO -->
+        <!-- BLOC CIBLES -->
+        <div class="container container-cibles">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mt-auto">
+              <div class="row">
+                <div class="text-center py-3">
+                  <div class="d-flex justify-content-center my-4">
+                    <img src="./images/bebe-c-removebg-preview.png" alt="">
+                  </div>
+                  <h3>Nourrissons</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-auto">
+              <div class="row">
+                <div class="text-center py-3">
+                  <div class="d-flex justify-content-center my-4">
+                    <img src="./images/enfant-c-removebg-preview.png" alt="">
+                  </div>
+                  <h3>Enfants</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-auto">
+              <div class="row">
+                <div class="text-center py-3">
+                  <div class="d-flex justify-content-center my-4">
+                    <img src="./images/grossesse-c-removebg-preview.png" alt="">
+                  </div>
+                  <h3>Grossesses</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 mt-auto">
+              <div class="row">
+                <div class="text-center py-3">
+                  <div class="d-flex justify-content-center my-4">
+                    <img src="./images/sportif-c-removebg-preview.png" alt="">
+                  </div>
+                  <h3>Sportifs</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 mt-auto">
+              <div class="row">
+                <div class="text-center py-3">
+                  <div class="d-flex justify-content-center my-4">
+                    <img src="./images/senior-c-removebg-preview.png" alt="">
+                  </div>
+                  <h3>Séniors</h3>
+                </div>
+              </div>
+            </div>
+            <div id="comment"></div>
+          </div>
+        </div>
+        <!-- FIN BLOC CIBLES -->
+      </div>
+    </div>
+    <!-- FIN BLOC POUR QUI ? -->
+
+    <!-- BLOC CHIFFRES -->
+    <!-- <div class="container-fluid bg-dark-grey mt70" id="chiffres"> <div class="container text-white text-center"> <div class="row"> <div class="col-12 col-lg-3"> <h4>9</h4> <h5>AWARDS</h5> </div> <div class="col-12 col-lg-3"> <h4>167</h4> <h5>CLIENTS</h5> </div> <div class="col-12 col-lg-3"> <h4>6</h4> <h5>TEAM</h5> </div> <div class="col-12 col-lg-3"> <h4>34</h4> <h5>PROJECT</h5> </div> </div> </div> </div> -->
+    <!-- FIN BLOC CHIFFRES -->
+
+    <!-- BLOC COMMENT ? -->
+    <div class="container-fluid comment">
+      <div class="row">
+        <!-- BLOC TITRE -->
+        <section class="container">
+          <h2>Comment ?</h2>
+          <hr>
+        </section>
+        <!-- FIN BLOC TITRE -->
+        <!-- APPROCHES -->
+        <div class="container container-approches">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mt-auto">
+              <div class="row">
+                <div class="text-center py-3">
+                  <div class="d-flex justify-content-center my-4">
+                    <img src="./images/myofascial-c-removebg-preview.png" alt="">
+                  </div>
+                  <h3>Myofascial</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-auto">
+              <div class="row">
+                <div class="text-center py-3">
+                  <div class="d-flex justify-content-center my-4">
+                    <img src="./images/structurel-c-removebg-preview.png" alt="">
+                  </div>
+                  <h3>Structurel</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-auto">
+              <div class="row">
+                <div class="text-center py-3">
+                  <div class="d-flex justify-content-center my-4">
+                    <img src="./images/cranien-c-removebg-preview.png" alt="">
+                  </div>
+                  <h3>Crânien</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-auto">
+              <div class="row">
+                <div class="text-center py-3">
+                  <div class="d-flex justify-content-center my-4">
+                    <img src="./images/visceral-c-removebg-preview.png" alt="">
+                  </div>
+                  <h3>Viscéral</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FIN APPROCHES -->
+      </div>
+    </div>
+    <!-- FIN BLOC COMMENT -->
+
+    <!-- BANDEAU JAUNE BIS -->
+    <div class="container-fluid bg-yellow">
+      <div class="container yellow-line">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 m-auto">
+            <span class="align-middle">Respect des normes sanitaires en vigueur contre le Covid</span>
+          </div>
+          <!-- <button type="button" class="btn btn-outline-light">Download</button> -->
+          <div class="col-lg-6 col-sm-12 btn-position">
+            <a class="btn btn-outline-light" href="https://www.doctolib.fr/osteopathe/toulouse/jonathan-borreil"
+              role="button" target="new">Prendre rendez-vous</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIN BANDEAU JAUNE BIS -->
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <!-- <section class="container"> <h2>Contact Us</h2> <hr> </section> -->
+      <div class="col-12 row mx-0">
+        <div class="text-center medias">
+          <!-- <img src="./images/osteo-jonathan-borreil-photo2.jpg" alt="" width="50%" style="border-radius: 25%;" class="img-fluid"> -->
+          <h3>JONATHAN BORREIL</h3>
+          <h4>OSTEOPATHE D.O.</h4>
+          <div class="avis container text-center">
+            <span class="google_note">5,0
+            </span>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          <a target="_blank"
+            href="https://www.google.fr/search?q=jonathan+borreil+osteo&dcr=0&sxsrf=ALiCzsYIwXSm2z27YD1NkvSBhFGnliTCLQ%3A1659526013486&ei=fVvqYtWoHbHIlwSP-I6wCg&oq=jonathan+&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCMQJzIICC4QgAQQsQMyBAgAEEMyBAguEEMyCAguEIAEELEDMggILhCABBCxAzIICC4QgAQQsQMyCAguEIAEELEDMgsILhCABBCxAxCDATIKCC4QsQMQgwEQQzoRCC4QgAQQsQMQgwEQxwEQrwE6CwgAEIAEELEDEIMBOggIABCxAxCDAToLCC4QgAQQxwEQ0QM6BQgAEIAEOggIABCABBCxAzoICC4QsQMQgwE6CgguELEDENQCEEM6BQguEIAEOg0ILhCABBDHARDRAxAKOgcIABCxAxAKOgcILhCABBAKSgQIQRgASgQIRhgAUABY_xRg9CNoAXABeACAAVuIAYcGkgECMTCYAQCgAQHAAQE&sclient=gws-wiz#lrd=0x12aeb1ce202eb971:0x6f78692d1bc70fd2,1,,,">
+            15 avis Google
+          </a>
+          <ul>
+            <li>
+              <a target="_new" href="https://www.doctolib.fr/osteopathe/toulouse/jonathan-borreil">
+                <i class="fa fa-calendar-plus-o"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="http://www.facebook.com/jonathan.b.osteo/">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_new" href="https://www.instagram.com/jonathan_b_osteo/?hl=en">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank"
+                href="https://www.google.fr/search?q=jonathan+borreil+osteo&dcr=0&sxsrf=ALiCzsYIwXSm2z27YD1NkvSBhFGnliTCLQ%3A1659526013486&ei=fVvqYtWoHbHIlwSP-I6wCg&oq=jonathan+&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCMQJzIICC4QgAQQsQMyBAgAEEMyBAguEEMyCAguEIAEELEDMggILhCABBCxAzIICC4QgAQQsQMyCAguEIAEELEDMgsILhCABBCxAxCDATIKCC4QsQMQgwEQQzoRCC4QgAQQsQMQgwEQxwEQrwE6CwgAEIAEELEDEIMBOggIABCxAxCDAToLCC4QgAQQxwEQ0QM6BQgAEIAEOggIABCABBCxAzoICC4QsQMQgwE6CgguELEDENQCEEM6BQguEIAEOg0ILhCABBDHARDRAxAKOgcIABCxAxAKOgcILhCABBAKSgQIQRgASgQIRhgAUABY_xRg9CNoAXABeACAAVuIAYcGkgECMTCYAQCgAQHAAQE&sclient=gws-wiz#lrd=0x12aeb1ce202eb971:0x6f78692d1bc70fd2,1,,,">
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="copyright">
+            <h4>&copy;2022 RoBDeV. All rights reserved.</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FIN FOOTER -->
+
+    <!-- LIENS CDN DES LIBRAIRIES JAVASCRIPT (JS) : CSS + JS "Bundle" -->
+    <!-- Attention : la version proposée en CDN de jQuery par Bootstrap est une version non complète mais suffisante pour les composants de Bootstrap. Par exemple, Ajax n'est pas disponible dans cette version. -->
+    <!-- On peut remplacer ce CDN par celui disponible chez Google par exemple si on a besoin de fonctionnalités non présentes dans la version slim https://developers.google.com/speed/libraries#jquery <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

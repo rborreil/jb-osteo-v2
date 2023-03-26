@@ -1,0 +1,751 @@
+/* CUSTOM STYLE */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: 'Open Sans', sans-serif; */
+    /* background: #f8f8f8; */
+    background: #081e30;
+    /* background: #DBA189; */
+}
+
+.section-globale{
+    background: #efeff1;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#scroll_to_top {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 50px;
+}
+
+#scroll_to_top img {
+    width: 50px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px black;
+}
+
+#scroll_to_top img:hover,
+#scroll_to_top img:focus {
+    width: 50px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px #DBA189;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    color: #081e30;
+    font-weight: 700;
+    text-align: center;
+    font-size: 3.125rem;
+    padding: 60px 0 40px 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-weight: 500;
+    color: #efeff1;
+    /* padding-bottom: 26px; */
+    /* padding-top: 47px; */
+    font-size: 1.1875rem;
+}
+
+hr {
+    background: #DBA189;
+    width: 25%;
+    margin: 0 auto 40px auto;
+    opacity: .7;
+}
+
+hr:not([size]) {
+    height: 2px;
+    border-radius: 50px;
+}
+
+.container p {
+    padding: 0 9.166%;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    line-height: 1.9375rem;
+    font-weight: 400;
+}
+
+.navbar-brand h2 {
+    display: none;
+}
+
+/* CAROUSEL CAROUSEL CAROUSEL CAROUSEL */
+
+/* .carousel-caption {
+    align-items: flex-start;
+} */
+
+.carousel-h1 {
+    font-family: 'Open Sans', sans-serif;
+    /* font-size gère la taille de la typo, comme on n'utilise pas de pixels, ici on veut 77px que l'on converti en rem (responsive em - emphase metric) ce qui donne 4.8125rem. CF : https://www.jarrige.fr/pixelrem/ */
+    font-size: 4.8125rem;
+    /* La propriété font-weight gère la graisse de la typo (normal, fin, gras, etc..) */
+    font-weight: 700;
+    color: #081e30;
+    text-shadow: 3px 3px 5px rgba(253, 253, 253, 0.383);
+    /* width: 64%; */
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    margin: 0;
+}
+
+.carousel-h2 {
+    color: #081e30;
+    font-size: 3rem;
+    font-weight: 700;
+    /* text-align: center; */
+    text-shadow: 2px 2px 5px rgba(253, 253, 253, 0.383);
+    margin-top: 6%;
+    padding: 0;
+}
+
+.carousel-h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #081e30;
+    /* border: 2px solid #DBA189; */
+    text-shadow: 1px 1px 4px rgba(253, 253, 253, 0.383);
+    margin-top: 2%;
+}
+
+.carousel-item img {
+    max-height: 700px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 60px;
+    width: 60px;
+    color: rgb(187, 18, 18);
+    outline: rgb(242, 10, 10);
+    /* background-color: rgb(141, 47, 47); */
+    /* background-color: #081e30; */
+    background-color: #DBA189;
+    /* background-size: 100%, 100%; */
+    border-radius: 50%;
+    /* border: 1px solid black; */
+}
+
+.carousel-entier [role=button] {
+    cursor: default;
+}
+
+/* BANDEAUX JAUNES BANDEAUX JAUNES BANDEAUX JAUNES */
+.bg-yellow {
+    /* background: rgb(252, 190, 3); */
+    background: #DBA189;
+}
+
+.yellow-line {
+    padding: 70px 0;
+    text-align: center;
+    color: #081e30;
+    font-weight: 500;
+}
+
+.yellow-line .btn {
+    /* Pour simplifier le responsive, on règle les propriétés agissant sur les largeurs (width, margin-left, margin-right, padding-left, padding-right) de préférence en % */
+    border-radius: 50px;
+    border-color: #081e30;
+    border-width: 2px;
+    color: #081e30;
+    font-weight: 700;
+}
+
+.yellow-line .btn:hover,
+.yellow-line .btn:focus {
+    /* Pour simplifier le responsive, on règle les propriétés agissant sur les largeurs (width, margin-left, margin-right, padding-left, padding-right) de préférence en % */
+    border-radius: 50px;
+    border-color: #efeff1;
+    color: #efeff1;
+    background: #081e30;
+}
+
+/* A PROPOS A PROPOS A PROPOS A PROPOS */
+.apropos {
+    background: #efeff1;
+}
+
+.apropos .container p {
+    color: #081e30;
+}
+
+.py-70 {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.bloc-apropos {
+    padding: 2rem 1.375rem;
+    background: #081e30;
+    border-radius: 25px;
+    /* color: whitesmoke; */
+}
+
+.bloc-apropos .col-md-5{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bloc-apropos img{
+    width: 100%;
+    /* border-radius: 50px; */
+    border-radius: 50%;
+    margin: 11px auto;
+}
+
+.bloc-apropos i {
+    color: #DBA189;
+    font-size: 100px;
+    margin-top: 11px;
+    margin-bottom: 45px;
+}
+
+.bloc-apropos h3 {
+    margin-bottom: 11px;
+    color: whitesmoke;
+}
+
+.apropos .bloc-apropos p {
+    color: #efeff1;
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+    padding: 0;
+    margin-top: 11px;
+}
+
+.bloc-defosteo i {
+    /* color: #DBA189; */
+    /* font-size: 100px; */
+    /* margin-top: 11px; */
+    margin-bottom: 11px;
+}
+
+/* CONTACT CONTACT CONTACT CONTACT*/
+.contact {
+    background: #081e30;
+}
+
+.contact h2 {
+    color: #efeff1;
+}
+
+.contact a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.contact p a:hover,
+.contact p a:focus {
+    color: #DBA189;
+    font-size: larger;
+    text-decoration: none;
+    transition: .7s;
+}
+
+/* .contact hr {
+    margin: 0 auto 50px auto;
+} */
+
+.py-0 {
+    padding: 0;
+}
+
+#features h3 {
+    /* color: #DBA189; */
+    font-size: 1.0625rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+#features p {
+    color: whitesmoke;
+    font-size: 0.8125rem;
+    padding: 0;
+    font-weight: 500;
+    line-height: 1.3125rem;
+    margin: 2px 0;
+}
+
+#features i {
+    font-size: 2.5rem;
+    color: #081e30;
+}
+
+.bg-icon-features {
+    background: #DBA189;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-icon-features:hover {
+    background: #DBA189;
+    /* border-radius: 50px; */
+    width: 70px;
+    height: 70px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    transition: .5s;
+}
+
+/* Pour rappel, le signe > permet de ne cibler que les div enfants de premier niveau. */
+#features>.row>div {
+    margin-bottom: 50px;
+}
+
+.btn-contact {
+    text-align: center;
+}
+
+.btn-contact a {
+    font-weight: 700;
+    border-radius: 50px;
+    border-color: #DBA189;
+    border-width: 2px;
+    /* color: #DBA189; */
+}
+
+.btn-contact a:hover,
+.btn-contact a:focus {
+    background: #DBA189;
+    color: #081e30;
+}
+
+/* POUR QUI POUR QUI POUR QUI POUR QUI */
+.pourqui {
+    background: #efeff1;
+}
+
+.pourqui p,
+.pourqui h2,
+.pourqui h3{
+    color: #081e30;
+}
+
+.container-cibles{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* COMMENT COMMENT COMMENT COMMENT COMMENT */
+.comment{
+    background: #081e30;
+}
+
+.comment h2{
+    color: whitesmoke;
+}
+
+.container-approches{
+    margin-bottom: 40px;
+}
+
+/* CHIFFRES */
+/* .bg-dark-grey {
+    background: #333231;
+}
+
+#chiffres {
+    padding: 100px 0 70px 0;
+}
+
+#chiffres h4 {
+    font-weight: 700;
+    font-size: 3.75rem;
+}
+
+#chiffres h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    /* La font-size est déclarée par sécurité, en effet body écrit normalement par défaut en corps 16px, 1rem */
+    /* font-size: 1rem; */
+/* } */
+
+/* PARTNERS */
+/* #CarouselPartners .carousel-indicators li {
+    background-color: #666;
+}
+
+#CarouselPartners .carousel-indicators li.active {
+    background-color: rgba(252, 190, 3, 1);
+}
+
+#CarouselPartners .carousel-indicators {
+    top: 120px;
+} */
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER */
+/* FOOTER MEDIAS */
+#footer .medias {
+    background: #081e30;
+}
+
+#footer .medias h3 {
+    font-size: 1rem;
+    color: #efeff1;
+    font-weight: 700;
+    line-height: initial;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+#footer h4 {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    line-height: initial;
+    color: #efeff1;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+}
+
+/* #footer .medias p {
+    font-size: 0.8125rem;
+    padding: 5px 10px 20px 10px;
+    line-height: 1.5rem;
+} */
+
+#footer .medias .avis span {
+    margin-right: 5px;
+}
+
+#footer .medias .avis i {
+    color: yellow;
+}
+
+#footer .medias .avis,
+#footer .medias a {
+    color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer a:hover,
+#footer a:focus{
+    color: #DBA189;
+}
+
+#footer .medias ul {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+/* Dans l'ID team, si il y a un ul et si il y a une li, on leur applique display:inline, color:#b2b3b7 */
+#footer .medias ul li {
+    display: inline;
+    /* list-style-type: none; */
+    color: #efeff1;
+    font-size: 1.25rem;
+    margin: 0 20px;
+}
+
+#footer .copyright h4 {
+    text-align: left;
+    font-size: 0.65rem;
+}
+
+/* FOOTER COPYRIGHT AVIS */
+
+#footer {
+    background-color: #333231;
+}
+
+#footer .container h2 {
+    color: #fff;
+    background-color: #333231;
+}
+
+#footer .container .text-center p {
+    color: #fff;
+}
+
+
+
+/*=============================================
+===============================================
+===============================================
+===============================================*/
+
+
+
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
+/* // Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575.98px) {
+    #scroll_to_top img {
+        width: 30px;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px black;
+    }
+} */
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .container p {
+        font-size: 1.15rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    .navbar-brand img{
+        display: none;
+    }
+
+    .navbar-brand h2 {
+        display: block;
+        font-size: 2.5rem;
+        padding: 0;
+    }
+    
+    .carousel-entier{
+        display: none;
+    }
+
+    .bandeau-off{
+        display: none;
+    }
+
+    .apropos .container h2{
+        padding: 30% 0 40px 0;
+        font-size: 2.5rem;
+    }
+
+    .navbar-light .navbar-toggler {
+        border: 2px solid rgba(0,0,0,.6);
+    }
+
+    .navbar-toggler {
+        padding: 0.35rem 0.9rem;
+        border-radius: 1.75rem;
+        margin-right: 3%;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .bloc-apropos img{
+        width: 50%;
+        margin: 8% auto 4% auto;
+    }
+
+    #footer .copyright h4 {
+        text-align: center;
+        font-size: 0.65rem;
+    }
+
+    #scroll_to_top img {
+        width: 30px;
+        /* border-radius: 15px;
+        box-shadow: 0 2px 5px black; */
+    }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) {
+    .container p {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 2.75rem;
+    }
+
+    .yellow-line{
+        font-size: 1.1rem;
+    }
+
+    .btn{
+        font-size: 1.1rem;
+    }
+
+    .navbar-light .navbar-toggler {
+        border: 3px solid rgba(0,0,0,.6);
+    }
+
+    .navbar-toggler {
+        padding: 0.75rem 1.3rem;
+        border-radius: 1.75rem;
+        margin-right: 3%;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .bloc-apropos .col-md-5 h3 {
+        margin-bottom: 20%;
+    }
+
+    #scroll_to_top img {
+        width: 40px;
+        /* border-radius: 15px;
+        box-shadow: 0 2px 5px black; */
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 991.98px){
+    .yellow-line .btn-position{
+        margin-top: 6%;
+    }
+
+    .carousel-h1{
+        font-size: 3rem;
+    }
+
+    .carousel-h2{
+        font-size: 2.25rem;
+    }
+
+    .carousel-h3{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 992px){
+    .container p {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 3.125rem;
+    }
+
+    .yellow-line{
+        font-size: 1.15rem;
+    }
+
+    .btn{
+        font-size: 1.15rem;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #scroll_to_top img {
+        width: 50px;
+        /* border-radius: 15px;
+        box-shadow: 0 2px 5px black; */
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* OVERRIDE BOOTSTRAP */
+.navbar{
+    max-width: 95%;
+    background-color: #DBA189dd;
+    top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.1rem;
+    border-radius: 25px;
+}
+
+.navbar-brand {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    /* margin-right: 1rem; */
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-left: 1rem;
+}
+
+.navbar img{
+    width: 90%;
+    border-radius: 25% 50% 25% 50%;
+    margin: 0rem 0 0rem 0rem;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.navbar .navbar-nav{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    /* rgba correspond à une couleur rgb + le a (alpha ou opacité) qui se règle avec des valeurs comprises entre 0 (0%) et 1 (100%). */
+    /* color: rgb(255, 255, 255); */
+    color: #081e30;   
+    /* text-transform: uppercase permet de forcer l'écriture en majuscules. */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    /* L'unité utilisée (presque tout le temps est le rem (responsive emphase metric (em)), 1 rem = 16px) */
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #efeff1;
+}
+
+.carousel-item {
+    transition: transform 2.6s ease-in-out;
+}
+  
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+    transition: opacity 0s 2.6s;
+}
+
+.carousel-caption {
+    /* Dans cette réécriture de la règle Bootstrap, les propriétés commentées ne sont pas à redéclarer car on garde ce qui est par défaut dans la déclaration originale dans Bootstrap */
+    /* position: absolute; */
+    right: initial;
+    bottom: initial;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /* color: #fff; */
+    /* text-align: center; */
+    width: 100%;
+    /* pointer-events permet de rendre l'objet "invisible" à la souris de sorte que des objets qui seraient dessous (absolute et z-index) resteront cliquables. */
+    pointer-events: none;
+}
