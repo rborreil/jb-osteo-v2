@@ -21,7 +21,7 @@
 <body>
   <div class="section-globale">
     <div id="scroll_to_top">
-      <a href="#top"><img src="./images/top-arrow.jpg" alt="Retourner en haut"/></a>
+      <a href="#top"><img src="./images/top-arrow.jpg" alt="Retourner en haut" /></a>
     </div>
     <!-- HEADER ET NAV PRINCIPALE -->
     <header class="container-fluid bg-light">
@@ -43,21 +43,21 @@
             <!-- <li class="nav-item mx-4">
               <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
             </li> -->
-            <li class="nav-item mx-4">
-              <a class="nav-link" href="#apropos">À  Propos</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#apropos">À Propos</a>
             </li>
-            <li class="nav-item mx-4">
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
-            <li class="nav-item mx-4">
+            <li class="nav-item">
               <a class="nav-link" href="#pourqui">Pour qui</a>
             </li>
-            <li class="nav-item mx-4">
+            <li class="nav-item">
               <a class="nav-link" href="#comment">Comment</a>
             </li>
             <!-- <li class="nav-item"> <a class="nav-link" href="features.html">Blog & Astuces</a> </li> -->
             <!-- <li class="nav-item"> <a class="nav-link" href="portfolio.html">Avis</a> </li> -->
-            <li class="nav-item mx-4">
+            <li class="nav-item">
               <a class="nav-link" href="https://www.doctolib.fr/osteopathe/toulouse/jonathan-borreil"
                 target="new">Prendre rendez-vous</a>
             </li>
@@ -126,72 +126,79 @@
       </div>
     </div>
     <!-- FIN BANDEAU JAUNE -->
+    <div id="apropos"></div>
 
     <!-- BLOC A PROPOS -->
     <div class="container-fluid apropos">
-      <!-- BLOC TITRE -->
-      <div class="container">
-        <h2>À propos</h2>
-        <hr>
-      </div>
-      <!-- FIN BLOC TITRE -->
-      <!-- BLOC PHRASE INTRO -->
-      <div class="container text-center">
-        <p>Traitements dès l'âge de 7 mois : nourrissons, enfants, femmes enceintes, sportifs, seniors.
-        </p>
-        <p class="font-weight-bold"><strong>Cabinet en rez-de-chaussée et aux normes PMR.</strong></p>
-      </div>
-      <!-- FIN BLOC PHRASE INTRO -->
-      <!-- BLOC JOSTEO -->
-      <div class="container py-70">
-        <!-- La row ci-dessous a une hauteur déterminée par son enfant le plus grand (le plus haut) parce qu'elle est display flex et que le comportement natif d'un objet flex (même en-dehors de Bootstrap) est de stretcher ses enfants à sa hauteur. Les 4 colonnes ont donc la même hauteur, mais pas les fonds gris qui sont des enfants dans la colonne et qui n'héritent pas du comportement de leur parent. -->
-        <!-- BLOC PREZ JO -->
-        <!-- Afin d'avoir la même hauteur de fond gris dans chaque colonne, il faut que les colonnes soient en même temps des objets flex (ce qu'elles ne sont pas avec la seule classe col-*). On ajoute donc une classe row à chaque colonne de sorte que les enfants des colonnes vont faire la hauteur de leur parent. Un bémol, la classe row ajoute un margin négatif de -15px qui annule les goutières (padding de 15px à gauche et à droite de la classe col-*). Afin de corriger cela, on applique également une classe native de Bootstrap mx (margin gauche et droite) à la valeur 0, du coup on obtient une row sans margin négatif. -->
-        <div class="row mb-5">
-          <!-- <div class="col-12 col-lg-2 col-md-2"></div> -->
-          <div class="col-image col-12 row mb-3 mb-lg-0 mx-0">
-            <div class="border bg-grey bloc-apropos text-center w-100">
-              <div class="row">
-                <div class="col-12 col-lg-1 col-md-1"></div>
-                <div class="col-12 col-lg-4 col-md-5">
-                  <div class="row text-center">
-                    <h3>A Tournefeuille depuis 2016</h3>
+      <div class="row">
+        <!-- BLOC TITRE -->
+        <div class="container">
+          <h2>À propos</h2>
+          <hr>
+        </div>
+        <!-- FIN BLOC TITRE -->
+        <!-- BLOC PHRASE INTRO -->
+        <div class="container text-center">
+          <p>Traitements dès l'âge de 7 mois : nourrissons, enfants, femmes enceintes, sportifs, seniors.
+          </p>
+          <p class="font-weight-bold"><strong>Cabinet en rez-de-chaussée et aux normes PMR.</strong></p>
+        </div>
+        <!-- FIN BLOC PHRASE INTRO -->
+        <!-- BLOC JOSTEO -->
+        <div class="container py-70">
+          <!-- La row ci-dessous a une hauteur déterminée par son enfant le plus grand (le plus haut) parce qu'elle est display flex et que le comportement natif d'un objet flex (même en-dehors de Bootstrap) est de stretcher ses enfants à sa hauteur. Les 4 colonnes ont donc la même hauteur, mais pas les fonds gris qui sont des enfants dans la colonne et qui n'héritent pas du comportement de leur parent. -->
+          <!-- BLOC PREZ JO -->
+          <!-- Afin d'avoir la même hauteur de fond gris dans chaque colonne, il faut que les colonnes soient en même temps des objets flex (ce qu'elles ne sont pas avec la seule classe col-*). On ajoute donc une classe row à chaque colonne de sorte que les enfants des colonnes vont faire la hauteur de leur parent. Un bémol, la classe row ajoute un margin négatif de -15px qui annule les goutières (padding de 15px à gauche et à droite de la classe col-*). Afin de corriger cela, on applique également une classe native de Bootstrap mx (margin gauche et droite) à la valeur 0, du coup on obtient une row sans margin négatif. -->
+          <div class="row row-prez">
+            <!-- <div class="col-12 col-lg-2 col-md-2"></div> -->
+            <div class="col-image col-12 row mx-0">
+              <div class="border bg-grey bloc-apropos text-center w-100">
+                <div class="row">
+                  <div class="col-12 col-lg-1 col-md-1"></div>
+                  <div class="col-12 col-lg-4 col-md-5">
+                    <!-- <div class="row text-center"> -->
+                      <h3>A Tournefeuille depuis 2016</h3>
+                    <!-- </div> -->
+                    <img src="./images/osteo-jonathan-borreil-photo1.jpg" alt="">
                   </div>
-                  <img src="./images/osteo-jonathan-borreil-photo1.jpg" alt="">
+                  <div class="col-12 col-lg-2 col-md-1"></div>
+                  <div class="col-12 col-lg-4 col-md-4 my-4">
+                    <i class="fa fa-cube" aria-hidden="true"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus voluptate, dicta vero nihil
+                      illum vitae alias pariatur voluptas eaque quis. Modi tempore enim tenetur voluptate adipisci
+                      repellat maiores iste quisquam!</p>
+                  </div>
+                  <div class="col-12 col-lg-1 col-md-1"></div>
                 </div>
-                <div class="col-12 col-lg-2 col-md-1"></div>
-                <div class="col-12 col-lg-4 col-md-4 mt-4">
-                  <i class="fa fa-cube" aria-hidden="true"></i>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus voluptate, dicta vero nihil illum vitae alias pariatur voluptas eaque quis. Modi tempore enim tenetur voluptate adipisci repellat maiores iste quisquam!</p>
-                </div>
-                <div class="col-12 col-lg-1 col-md-1"></div>
               </div>
             </div>
+            <!-- <div class="col-12 col-lg-2 col-md-2"></div> -->
           </div>
-          <!-- <div class="col-12 col-lg-2 col-md-2"></div> -->
-        </div>
-        <!-- FIN BLOC PREZ JO -->
-        <!-- BLOC DEF OSTEO -->
-        <div class="row">
-          <div class="col-12 col-lg-2 col-md-2 row mb-3 mb-lg-0 mx-0"></div>
-          <div class="bloc-defosteo col-12 col-lg-8 col-md-8 row mb-3 mb-lg-0 mx-0">
-            <div class="border bg-grey bloc-apropos text-center w-100">
-              <h3>L'ostéopathie</h3>
-              <i class="fa fa-medkit" aria-hidden="true"></i>
-              <p>L’ostéopathie est une approche thérapeutique manuelle douce qui se fonde sur une vision globale de la
-                structure du corps humain. L’ostéopathe va pratiquer des manipulations manuelles du système
-                musculo-squelettique et utiliser des techniques de relâchement myofascial afin de soulager les tensions,
-                les déséquilibres et les douleurs. Par exemple l’ostéopathe peut soigner les maux de dos, les entorses,
-                le stress, les règles douloureuses ou encore les migraines. L’ostéopathie est à visée préventive et
-                curative. Un ostéopathe peut recevoir différents types de patients : des nourrissons, des enfants, des
-                sportifs, des femmes enceintes ou encore des seniors.</p>
+          <!-- FIN BLOC PREZ JO -->
+          <!-- BLOC DEF OSTEO -->
+          <div class="row">
+            <div class="col-12 col-lg-2 col-md-2 row mb-3 mb-lg-0 mx-0"></div>
+            <div class="bloc-defosteo col-12 col-lg-8 col-md-8 row mb-3 mb-lg-0 mx-0">
+              <div class="border bg-grey bloc-apropos text-center w-100">
+                <h3>L'ostéopathie</h3>
+                <i class="fa fa-medkit" aria-hidden="true"></i>
+                <p>L’ostéopathie est une approche thérapeutique manuelle douce qui se fonde sur une vision globale de la
+                  structure du corps humain. L’ostéopathe va pratiquer des manipulations manuelles du système
+                  musculo-squelettique et utiliser des techniques de relâchement myofascial afin de soulager les
+                  tensions,
+                  les déséquilibres et les douleurs. Par exemple l’ostéopathe peut soigner les maux de dos, les
+                  entorses,
+                  le stress, les règles douloureuses ou encore les migraines. L’ostéopathie est à visée préventive et
+                  curative. Un ostéopathe peut recevoir différents types de patients : des nourrissons, des enfants, des
+                  sportifs, des femmes enceintes ou encore des seniors.</p>
+              </div>
             </div>
+            <div class="col-12 col-lg-2 col-md-2 row mb-3 mb-lg-0 mx-0"></div>
           </div>
-          <div class="col-12 col-lg-2 col-md-2 row mb-3 mb-lg-0 mx-0"></div>
+          <!-- FIN BLOC DEF OSTEO -->
         </div>
-        <!-- FIN BLOC DEF OSTEO -->
+        <!-- FIN BLOC JOSTEO -->
       </div>
-      <!-- FIN BLOC JOSTEO -->
     </div>
     <!-- FIN BLOC A PROPOS -->
 
@@ -202,6 +209,7 @@
           <div class="col-lg-6 col-sm-12 m-auto">
             <span class="align-middle">Préventions sanitaires contre le Covid</span>
           </div>
+          <div id="contact"></div>
           <!-- <button type="button" class="btn btn-outline-light">Download</button> -->
           <div class="col-lg-6 col-sm-12 btn-position">
             <a class="btn btn-outline-light" href="https://www.doctolib.fr/osteopathe/toulouse/jonathan-borreil"
@@ -300,7 +308,7 @@
             <div class="btn-contact container">
               <a class="btn btn-outline-light my-5" href="https://www.doctolib.fr/osteopathe/toulouse/jonathan-borreil"
                 role="button" target="new">Prendre rendez-vous</a>
-                <div id="pourqui"></div>
+              <div id="pourqui"></div>
             </div>
           </div>
         </div>

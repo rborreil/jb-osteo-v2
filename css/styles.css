@@ -34,8 +34,6 @@ body {
 
 #scroll_to_top img:hover,
 #scroll_to_top img:focus {
-    width: 50px;
-    border-radius: 15px;
     box-shadow: 0 2px 5px #DBA189;
 }
 
@@ -191,8 +189,12 @@ hr:not([size]) {
 }
 
 .py-70 {
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.row-prez {
+    margin-bottom: 10%;
 }
 
 .bloc-apropos {
@@ -203,8 +205,8 @@ hr:not([size]) {
 }
 
 .bloc-apropos .col-md-5{
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 .bloc-apropos img{
@@ -217,8 +219,8 @@ hr:not([size]) {
 .bloc-apropos i {
     color: #DBA189;
     font-size: 100px;
-    margin-top: 11px;
-    margin-bottom: 45px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .bloc-apropos h3 {
@@ -251,7 +253,7 @@ hr:not([size]) {
     color: #efeff1;
 }
 
-.contact a {
+.contact p a {
     color: whitesmoke;
     text-decoration: none;
     transition: .5s ease-in-out;
@@ -260,7 +262,7 @@ hr:not([size]) {
 .contact p a:hover,
 .contact p a:focus {
     color: #DBA189;
-    font-size: small;
+    font-size: smaller;
     text-decoration: none;
     transition: .7s ease-in-out;
 }
@@ -537,6 +539,10 @@ hr:not([size]) {
     .navbar-brand img{
         display: none;
     }
+    
+    .navbar-light .navbar-nav .nav-link {
+        font-size: .75rem;
+    }
 
     .navbar-brand h2 {
         display: block;
@@ -648,6 +654,14 @@ hr:not([size]) {
     .navbar-toggler:focus {
         box-shadow: none;
     }
+    
+    /* .navbar .navbar-nav .nav-item {
+        margin-left: auto;
+    } */
+    
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
 
     .col-md-4 {
         flex: 0 0 auto;
@@ -701,6 +715,17 @@ hr:not([size]) {
     .carousel-h3{
         font-size: 1.5rem;
     }
+
+    .navbar .navbar-nav {
+        margin-top: 0.5%;
+        margin-bottom: 1%;
+    }
+
+    .navbar .navbar-nav .nav-item {
+        margin-left: auto;
+        margin-right: 3%;
+        /* margin-right: auto; */
+    }
 }
 
 @media (min-width: 992px){
@@ -714,6 +739,15 @@ hr:not([size]) {
 
     h3{
         font-size: 1.5rem;
+    }
+
+    .navbar .navbar-nav .nav-item {
+        margin: auto 1.5rem;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1.25rem;
+        text-align: center;
     }
 
     #features h3 {
@@ -786,7 +820,7 @@ hr:not([size]) {
     margin-left: 1rem;
 }
 
-.navbar img{
+.navbar img {
     width: 90%;
     border-radius: 25% 50% 25% 50%;
     margin: 0rem 0 0rem 0rem;
@@ -794,9 +828,13 @@ hr:not([size]) {
     justify-content: center; */
 }
 
-.navbar .navbar-nav{
-    margin-left: auto;
-    margin-right: auto;
+.navbar .navbar-nav {
+    margin: auto;
+}
+
+.navbar .navbar-nav .nav-item {
+    /* margin-left: 1.5rem; */
+    /* margin-right: 1.5rem; */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -807,7 +845,7 @@ hr:not([size]) {
     text-transform: uppercase;
     letter-spacing: 3px;
     /* L'unité utilisée (presque tout le temps est le rem (responsive emphase metric (em)), 1 rem = 16px) */
-    font-size: 1rem;
+    /* font-size: 1.25rem; */
     font-weight: 700;
 }
 
